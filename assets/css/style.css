@@ -1,0 +1,14 @@
+.container {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.jumbotron {
+    color: #337ab7;
+}
+.panel {
+    font-size: 14pt;
+    letter-spacing: 3px;
+}
+.score-panel {
+    height: 201px;
+}
