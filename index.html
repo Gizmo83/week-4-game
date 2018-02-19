@@ -11,55 +11,65 @@
     <title>Coin Collector Game</title>
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Coin Collector!</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-5">
-                <div class="col-md-12">
+    <div id="background">    
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Coin Collector!</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
                     <div class="panel panel-primary">
-                        <div class="panel-heading">Score</div>
+                        <div class="panel-heading">How to Play</div>
                         <div class="score-panel panel-body">
-                            <p>Wins: <span class="wins badge">0</span></p>
-                            <p>Losses:<span class="losses badge">0</span></p>
+                            <p id="instructions">Each Coin has a different value.  Click each Coin to accumulate the same value as the goal and you win!</p>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-md-4">
+                    <div class="col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Goal</div>
+                            <div class="panel-body">
+                                <p id="goal"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Your Total</div>
+                            <div class="panel-body">
+                                <p id="usertotal">0</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Score</div>
+                            <div class="score-panel panel-body">
+                                <p>Wins: <span class="wins badge">0</span></p>
+                                <p>Losses:<span class="losses badge">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
             </div>
-            <div class="col-md-7">
+            <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-primary">
-                        <div class="panel-heading">Goal</div>
-                        <div class="panel-body">
-                            <p id="goal"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">Your Total</div>
-                        <div class="panel-body">
-                            <p id="usertotal">0</p>
+                        <div class="panel-heading">Click Below</div>
+                        <div class="img-panel panel-body">
+                            <img class="img-button img-button-1" src="assets/images/btc.png" alt="BTC Image">
+                            <img class="img-button img-button-2" src="assets/images/ltc.png" alt="LTC Image">
+                            <img class="img-button img-button-3" src="assets/images/xmr.png" alt="XMR Image">
+                            <img class="img-button img-button-4" src="assets/images/xrp.png" alt="XRP Image">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Click Below</div>
-                    <div class="img-panel panel-body">
-                        <img class="img-button img-button-1" src="assets/images/btc.png" alt="BTC Image">
-                        <img class="img-button img-button-2" src="assets/images/ltc.png" alt="LTC Image">
-                        <img class="img-button img-button-3" src="assets/images/xmr.png" alt="XMR Image">
-                        <img class="img-button-4" src="assets/images/xrp.png" alt="XRP Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </div>    
    <script src="assets/javascript/game.js"></script> 
 </body>
 </html>

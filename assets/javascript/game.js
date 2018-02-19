@@ -16,8 +16,8 @@ function startGame (){
         if (userOptionSet.indexOf(userOption) < 0) {  //not sure what I did here but sometimes it only prints 3 numbers
             userOptionSet.push(userOption);
         }
-        //console.log(userOptionSet)
-        $(".img-button-1").attr("data-buttonvalue",userOptionSet[0]);
+        console.log(userOptionSet)
+        $(".img-button-1").attr("data-buttonvalue",userOptionSet[0]); //don't understand why userOptionSet[i] doesn't work
         $(".img-button-2").attr("data-buttonvalue",userOptionSet[1]);
         $(".img-button-3").attr("data-buttonvalue",userOptionSet[2]);
         $(".img-button-4").attr("data-buttonvalue",userOptionSet[3]);
@@ -26,6 +26,8 @@ function startGame (){
 startGame();
 
 $(".img-button").on("click",function(){
+    $(this).animate({opacity: '0.5'});
+    $(this).animate({opacity: '1'});
     var buttonValue = ($(this).attr("data-buttonvalue"));
     buttonValue = parseInt(buttonValue);
     console.log(buttonValue);

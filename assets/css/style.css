@@ -1,6 +1,12 @@
+#background {
+    background-image: url("../images/seigaiha.png");
+    background-repeat: repeat;
+}
+
 .container {
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 .jumbotron {
     color: #337ab7;
@@ -8,6 +14,9 @@
 .panel {
     font-size: 14pt;
     letter-spacing: 3px;
+}
+#instructions {
+    text-align: justify;
 }
 .score-panel {
     height: 201px;
