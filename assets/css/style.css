@@ -1,12 +1,14 @@
+html, body {
+    height: 100%;
+}
 #background {
     background-image: url("../images/seigaiha.png");
     background-repeat: repeat;
+    height: 100%;
 }
-
 .container {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 .jumbotron {
     color: #337ab7;
@@ -21,4 +23,8 @@
 }
 .score-panel {
     height: 201px;
+}
+#result-1, #result-2 {
+    opacity: 0;
+    color: red;
 }
