@@ -28,8 +28,8 @@ $(document).ready(function(){
     startGame();
 
     $(".img-button").on("click",function(){
-        $(this).animate({opacity: '0.5'});
-        $(this).animate({opacity: '1'});
+        $(this).animate({opacity: '0.5'}, "fast");
+        $(this).animate({opacity: '1'}, "fast");
         var buttonValue = ($(this).attr("data-buttonvalue"));
         buttonValue = parseInt(buttonValue);
         //console.log(buttonValue);
